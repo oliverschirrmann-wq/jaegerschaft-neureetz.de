@@ -18,21 +18,12 @@ a{color:inherit}
 nav{display:flex;flex-wrap:wrap;gap:20px;font-family:Arial,sans-serif;font-size:.9rem}
 nav a{text-decoration:none;opacity:.92}
 nav a:hover{opacity:1;color:#ead9a5}
-.hero{min-height:78vh;position:relative;display:grid;place-items:center;text-align:center;background:url("assets/hero.png") center/cover no-repeat;color:white}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,13,.2),rgba(8,24,13,.72))}
-.hero-overlay{z-index:1}.hero-content{position:relative;z-index:2;max-width:900px;padding:70px 24px}
-.hero-logo{width:min(270px,55vw);filter:drop-shadow(0 5px 14px rgba(0,0,0,.45))}
+.hero{position:relative;width:100%;overflow:hidden;background:#172019;line-height:0}
+.hero-bg{display:block;width:100%;height:auto;max-width:none;object-fit:contain;object-position:center}
 .eyebrow{font-family:Arial,sans-serif;font-size:.78rem;letter-spacing:.2em;font-weight:700;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
-.hero .eyebrow{color:#f2e2b4;margin-top:20px}
 h1,h2,h3{line-height:1.15;margin-top:0}
-h1{font-size:clamp(2.3rem,5vw,4.7rem);margin-bottom:16px;text-shadow:0 3px 15px rgba(0,0,0,.4)}
-h1 span{font-size:.8em}
 h2{font-size:clamp(2rem,4vw,3.1rem);color:var(--green);margin-bottom:22px}
 h3{color:var(--green);font-size:1.35rem}
-.lead{font-size:1.25rem;max-width:700px;margin:0 auto 30px}
-.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.button{display:inline-block;padding:13px 22px;background:var(--gold);color:#18251b;text-decoration:none;font-family:Arial,sans-serif;font-weight:700;border-radius:3px}
-.button-light{background:rgba(255,255,255,.9)}
 .section{max-width:1200px;margin:auto;padding:90px 24px}
 .intro{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:center}
 .intro p{font-size:1.08rem}
@@ -58,7 +49,7 @@ footer{background:#102b1a;color:#e9eadf;padding:35px 24px}
 .footer-links a{color:white}
 @media(max-width:800px){
   .nav-wrap{align-items:flex-start}.brand span{display:none}nav{gap:10px;font-size:.78rem}
-  .hero{min-height:72vh}.intro,.nature,.contact{grid-template-columns:1fr}
+  .hero{width:100%}.intro,.nature,.contact{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}.section{padding:65px 20px}
   .footer-wrap{flex-direction:column}.footer-links{align-items:flex-start}
 }
