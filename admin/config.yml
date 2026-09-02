@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: oliverschirrmann-wq/jaegerschaft-neureetz.de
+  branch: main
+  site_domain: jaegerschaft-neureetz.de
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Website & Termine"
+    files:
+      - label: "Website & Termine"
+        name: "site"
+        file: "content/site.json"
+        fields:
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Hero-Bild", name: "heroImage", widget: "image", required: false}
+          
+          - {label: "Hero – kleine Überschrift", name: "heroEyebrow", widget: "string"}
+          - {label: "Hero – Überschrift 1", name: "heroTitle1", widget: "string"}
+          - {label: "Hero – Überschrift 2", name: "heroTitle2", widget: "string"}
+          - {label: "Hero – Einleitung", name: "heroLead", widget: "text"}
+
+          - {label: "Über uns – kleine Überschrift", name: "introEyebrow", widget: "string"}
+          - {label: "Über uns – Überschrift", name: "introTitle", widget: "string"}
+          - {label: "Über uns – Text 1", name: "introText1", widget: "text"}
+          - {label: "Über uns – Text 2", name: "introText2", widget: "text"}
+          - {label: "Zitat", name: "quote", widget: "text"}
+
+          - {label: "Jagd & Hege – Überschrift", name: "hegeTitle", widget: "string"}
+          - label: "Jagd & Hege – Karten"
+            name: "hegeCards"
+            widget: "list"
+            fields:
+              - {label: "Symbol", name: "icon", widget: "string"}
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+
+          - {label: "Naturschutz – Überschrift", name: "natureTitle", widget: "string"}
+          - {label: "Naturschutz – Text", name: "natureText", widget: "text"}
+          - {label: "Naturschutz – Bild", name: "natureImage", widget: "image", required: false}
+          - label: "Naturschutz – Aufzählung"
+            name: "natureBullets"
+            widget: "list"
+            field: {label: "Punkt", name: "item", widget: "string"}
+
+          - {label: "Kontakt – Name", name: "contactName", widget: "string"}
+          - {label: "Kontakt – Adresse", name: "contactAddress", widget: "text"}
+          - {label: "Kontakt – E-Mail", name: "contactEmail", widget: "string"}
+          - {label: "Kontakt – Telefon", name: "contactPhone", widget: "string"}
+
+          - label: "Termine"
+            name: "events"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Datum", name: "date", widget: "string"}
+              - {label: "Uhrzeit", name: "time", widget: "string", required: false}
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Ort", name: "location", widget: "string", required: false}
+              - {label: "Beschreibung", name: "description", widget: "text", required: false}
