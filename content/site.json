@@ -1,0 +1,50 @@
+{
+  "siteTitle": "Jägerschaft Neureetz",
+  "heroImage": "hero.png",
+  "heroEyebrow": "Waidwerk · Hege · Naturschutz",
+  "heroTitle1": "Jägerschaft",
+  "heroTitle2": "Neureetz",
+  "heroLead": "Tradition bewahren. Zukunft gestalten.",
+
+  "introEyebrow": "Über uns",
+  "introTitle": "Waidwerk mit Verantwortung",
+  "introText1": "Die Jägerschaft Neureetz steht für verantwortungsvolle Jagd, gelebte Hege und aktiven Naturschutz in unserer heimischen Landschaft.",
+  "introText2": "Wir verbinden jagdliche Tradition mit einem modernen Verständnis für Wild, Wald, Feld und Natur.",
+  "quote": "Tradition bewahren. Zukunft gestalten.",
+
+  "hegeTitle": "Jagd, Hege und Verantwortung",
+  "hegeCards": [
+    {
+      "icon": "🦌",
+      "title": "Waidwerk",
+      "text": "Verantwortungsvolle und waidgerechte Jagd im Einklang mit Natur und Wild."
+    },
+    {
+      "icon": "🌿",
+      "title": "Hege",
+      "text": "Wir kümmern uns um einen gesunden und ausgewogenen Wildbestand sowie den Erhalt unserer Lebensräume."
+    },
+    {
+      "icon": "🌳",
+      "title": "Naturschutz",
+      "text": "Aktiver Einsatz für unsere heimische Tier- und Pflanzenwelt und eine vielfältige Kulturlandschaft."
+    }
+  ],
+
+  "natureTitle": "Natur erhalten – Lebensräume schützen",
+  "natureText": "Unsere Verantwortung endet nicht mit der Jagd. Wir setzen uns aktiv für den Erhalt und die Pflege wertvoller Lebensräume ein.",
+  "natureImage": "hero.png",
+  "natureBullets": [
+    "Pflege und Erhalt von Lebensräumen",
+    "Unterstützung der heimischen Tierwelt",
+    "Förderung einer artenreichen Kulturlandschaft",
+    "Verantwortungsvoller Umgang mit Natur und Wild"
+  ],
+
+  "contactName": "Tobias Kentel",
+  "contactAddress": "Wriezener Str. 8\n16259 Oderaue",
+  "contactEmail": "tobiwaw@web.de",
+  "contactPhone": "0174 7141531",
+
+  "events": []
+}
