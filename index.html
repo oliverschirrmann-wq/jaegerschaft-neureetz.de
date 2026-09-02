@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jägerschaft Neureetz – Waidwerk, Hege und Naturschutz in Oderaue.">
   <title>Jägerschaft Neureetz | Waidwerk · Hege · Naturschutz</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
+
 <body>
+
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="#start">
       <img src="logo.png" alt="Logo der Jägerschaft Neureetz">
       <span>Jägerschaft Neureetz</span>
     </a>
+
     <nav aria-label="Hauptnavigation">
       <a href="#ueber-uns">Über uns</a>
       <a href="#hege">Jagd &amp; Hege</a>
@@ -25,96 +28,291 @@
 </header>
 
 <main>
+
 <section id="start" class="hero">
-  <img class="hero-bg" src="hero.png" alt="Jägerschaft Neureetz – Waidwerk, Hege und Naturschutz">
+  <img class="hero-bg" src="hero.png"
+       alt="Jägerschaft Neureetz – Waidwerk, Hege und Naturschutz">
 </section>
 
 <section id="ueber-uns" class="section intro">
   <div>
-    <p class="eyebrow">Jägerschaft Neureetz</p>
-    <h2>Waidwerk mit Verantwortung</h2>
-    <p>Die Jägerschaft Neureetz steht für verantwortungsvolles Waidwerk, nachhaltige Hege und aktiven Naturschutz. Wir verstehen Jagd als Teil einer intakten Kulturlandschaft und tragen Verantwortung für Wild, Wald, Feld und Lebensräume.</p>
-    <p>Unser Revier liegt im Raum Oderaue. Im Mittelpunkt stehen ein respektvoller Umgang mit der Natur, die Pflege von Lebensräumen und ein verantwortungsbewusster Umgang mit dem Wildbestand.</p>
+    <p class="eyebrow" id="intro-eyebrow">Über uns</p>
+    <h2 id="intro-title">Waidwerk mit Verantwortung</h2>
+    <p id="intro-text1"></p>
+    <p id="intro-text2"></p>
   </div>
+
   <aside class="quote-card">
     <span>„</span>
-    <p>Hege bedeutet für uns nicht nur Wild zu bejagen, sondern Lebensräume zu erhalten und Verantwortung für die Natur zu übernehmen.</p>
+    <p id="quote"></p>
   </aside>
 </section>
 
 <section id="hege" class="section cards-section">
   <p class="eyebrow">Jagd &amp; Hege</p>
-  <h2>Unser Verständnis von Waidwerk</h2>
-  <div class="cards">
-    <article class="card">
-      <div class="icon">🦌</div>
-      <h3>Wildgerechte Hege</h3>
-      <p>Wir setzen auf einen verantwortungsvollen Umgang mit dem Wild und eine nachhaltige Bewirtschaftung des Reviers.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🌾</div>
-      <h3>Lebensräume erhalten</h3>
-      <p>Feld, Wald, Hecken und Gewässer sind wichtige Lebensräume. Ihr Erhalt kommt Wild, Vögeln und vielen anderen Arten zugute.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🐕</div>
-      <h3>Waidgerechte Jagd</h3>
-      <p>Respekt vor dem Tier, Sicherheit und ein verantwortungsvolles Handeln gehören für uns untrennbar zusammen.</p>
-    </article>
-  </div>
+  <h2 id="hege-title">Jagd, Hege und Verantwortung</h2>
+
+  <div class="cards" id="hege-cards"></div>
 </section>
 
 <section id="naturschutz" class="section nature">
+
   <div class="nature-text">
     <p class="eyebrow">Naturschutz</p>
-    <h2>Für eine lebendige Kulturlandschaft</h2>
-    <p>Jagd und Naturschutz können gemeinsam einen wichtigen Beitrag zum Erhalt unserer heimischen Artenvielfalt leisten. Deshalb gehört die Pflege von Biotopen und Lebensräumen ebenso zu unserem Selbstverständnis wie die Beobachtung der heimischen Tierwelt.</p>
-    <ul>
-      <li>Pflege und Erhalt von Lebensräumen</li>
-      <li>Beobachtung und Schutz der heimischen Tierwelt</li>
-      <li>Verantwortungsvoller Umgang mit Feld und Wald</li>
-      <li>Förderung einer vielfältigen Kulturlandschaft</li>
-    </ul>
+    <h2 id="nature-title">Natur erhalten – Lebensräume schützen</h2>
+    <p id="nature-text"></p>
+
+    <ul id="nature-bullets"></ul>
   </div>
+
   <div class="nature-image">
-    <img src="hero.png" alt="Landschaft mit Jäger, Hund und Wild bei Sonnenaufgang">
+    <img id="nature-image"
+         src="hero.png"
+         alt="Jägerschaft Neureetz – Natur und Landschaft">
   </div>
+
 </section>
 
 <section id="termine" class="section">
+
   <p class="eyebrow">Aktuelles</p>
   <h2>Termine &amp; Veranstaltungen</h2>
-  <div class="notice">
-    <strong>Termine werden hier künftig veröffentlicht.</strong>
-    <p>Ob Revierarbeiten, Hegetermine, Veranstaltungen oder weitere Aktivitäten – aktuelle Termine können hier ergänzt werden.</p>
+
+  <div class="events-list" id="events-list">
+    <div class="notice">
+      <strong>Termine werden hier veröffentlicht.</strong>
+      <p>Aktuelle Termine können über die Website-Verwaltung ergänzt werden.</p>
+    </div>
   </div>
+
 </section>
 
 <section id="kontakt" class="section contact">
+
   <div>
     <p class="eyebrow">Kontakt</p>
     <h2>Jägerschaft Neureetz</h2>
-    <p>Jagdpächter <strong>Tobias Kentel</strong></p>
-    <p>Wriezener Str. 8<br>16259 Oderaue</p>
+
+    <p>
+      Jagdpächter <strong id="contact-name">Tobias Kentel</strong>
+    </p>
+
+    <p id="contact-address"></p>
   </div>
+
   <div class="contact-box">
-    <a href="mailto:tobiwaw@web.de">tobiwaw@web.de</a>
-    <a href="tel:+491747141531">0174 7141531</a>
+    <a id="contact-email" href="mailto:tobiwaw@web.de">
+      tobiwaw@web.de
+    </a>
+
+    <a id="contact-phone" href="tel:+491747141531">
+      0174 7141531
+    </a>
   </div>
+
 </section>
+
 </main>
 
 <footer>
   <div class="footer-wrap">
+
     <div>
       <strong>Jägerschaft Neureetz</strong>
       <p>Waidwerk · Hege · Naturschutz</p>
     </div>
+
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </div>
+
   </div>
 </footer>
+
+
+<script>
+async function loadWebsiteContent() {
+
+  try {
+
+    const response = await fetch(
+      'content/site.json?v=' + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error('site.json konnte nicht geladen werden');
+    }
+
+    const d = await response.json();
+
+
+    /* Über uns */
+
+    document.getElementById('intro-eyebrow').textContent =
+      d.introEyebrow || 'Über uns';
+
+    document.getElementById('intro-title').textContent =
+      d.introTitle || '';
+
+    document.getElementById('intro-text1').textContent =
+      d.introText1 || '';
+
+    document.getElementById('intro-text2').textContent =
+      d.introText2 || '';
+
+    document.getElementById('quote').textContent =
+      d.quote || '';
+
+
+    /* Jagd & Hege */
+
+    document.getElementById('hege-title').textContent =
+      d.hegeTitle || '';
+
+    const cards = document.getElementById('hege-cards');
+
+    cards.innerHTML = '';
+
+    (d.hegeCards || []).forEach(card => {
+
+      const article = document.createElement('article');
+      article.className = 'card';
+
+      article.innerHTML = `
+        <div class="icon">${card.icon || ''}</div>
+        <h3>${card.title || ''}</h3>
+        <p>${card.text || ''}</p>
+      `;
+
+      cards.appendChild(article);
+
+    });
+
+
+    /* Naturschutz */
+
+    document.getElementById('nature-title').textContent =
+      d.natureTitle || '';
+
+    document.getElementById('nature-text').textContent =
+      d.natureText || '';
+
+    if (d.natureImage) {
+      document.getElementById('nature-image').src =
+        d.natureImage;
+    }
+
+    const bullets = document.getElementById('nature-bullets');
+
+    bullets.innerHTML = '';
+
+    (d.natureBullets || []).forEach(text => {
+
+      const li = document.createElement('li');
+
+      li.textContent = text;
+
+      bullets.appendChild(li);
+
+    });
+
+
+    /* Kontakt */
+
+    document.getElementById('contact-name').textContent =
+      d.contactName || '';
+
+    const address =
+      (d.contactAddress || '').replace(/\n/g, '<br>');
+
+    document.getElementById('contact-address').innerHTML =
+      address;
+
+    document.getElementById('contact-email').textContent =
+      d.contactEmail || '';
+
+    document.getElementById('contact-email').href =
+      'mailto:' + (d.contactEmail || '');
+
+    document.getElementById('contact-phone').textContent =
+      d.contactPhone || '';
+
+    const phone =
+      (d.contactPhone || '').replace(/\s/g, '');
+
+    document.getElementById('contact-phone').href =
+      'tel:+49' + phone.replace(/^0/, '');
+
+
+    /* Termine */
+
+    const eventsList =
+      document.getElementById('events-list');
+
+    eventsList.innerHTML = '';
+
+    const events = d.events || [];
+
+    if (events.length === 0) {
+
+      eventsList.innerHTML = `
+        <div class="notice">
+          <strong>Termine werden hier veröffentlicht.</strong>
+          <p>
+            Aktuelle Termine können über die Website-Verwaltung
+            ergänzt werden.
+          </p>
+        </div>
+      `;
+
+    } else {
+
+      events.forEach(event => {
+
+        const article = document.createElement('article');
+
+        article.className = 'card event';
+
+        article.innerHTML = `
+
+          <div class="event-date">
+            ${event.date || ''}
+            ${event.time ? ' · ' + event.time : ''}
+          </div>
+
+          <h3>${event.title || ''}</h3>
+
+          ${
+            event.location
+              ? `<p class="event-location">📍 ${event.location}</p>`
+              : ''
+          }
+
+          ${
+            event.description
+              ? `<p class="event-description">${event.description}</p>`
+              : ''
+          }
+
+        `;
+
+        eventsList.appendChild(article);
+
+      });
+
+    }
+
+  } catch (error) {
+
+    console.error('Fehler beim Laden der Website-Inhalte:', error);
+
+  }
+
+}
+
+loadWebsiteContent();
+</script>
+
 </body>
 </html>
