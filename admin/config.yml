@@ -61,3 +61,10 @@ collections:
               - {label: "Titel", name: "title", widget: "string"}
               - {label: "Ort", name: "location", widget: "string", required: false}
               - {label: "Beschreibung", name: "description", widget: "text", required: false}
+           - label: "Bilder"
+            name: "gallery"
+            widget: "list"
+            hint: "Hier kannst du Bilder für die Bilderseite hinzufügen."
+            fields:
+              - { label: "Bild", name: "image", widget: "image" }
+              - { label: "Bildunterschrift", name: "caption", widget: "string", required: false }
