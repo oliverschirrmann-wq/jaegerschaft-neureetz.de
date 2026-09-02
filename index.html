@@ -291,7 +291,7 @@ async function loadWebsiteContent() {
 
           ${
             event.description
-              ? `<p class="event-description">${event.description}</p>`
+             ? `<p class="event-description">${event.description.replace(/\n/g, '<br><br>')}</p>`
               : ''
           }
 
