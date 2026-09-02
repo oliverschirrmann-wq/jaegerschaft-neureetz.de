@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilder der Jägerschaft Neureetz – Revier, Natur, Hege und Veranstaltungen.">
+  <title>Bilder | Jägerschaft Neureetz</title>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html#start">
+      <img src="logo.png" alt="Logo der Jägerschaft Neureetz">
+      <span>Jägerschaft Neureetz</span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html#ueber-uns">Über uns</a>
+      <a href="index.html#hege">Jagd &amp; Hege</a>
+      <a href="index.html#naturschutz">Naturschutz</a>
+      <a href="index.html#termine">Termine</a>
+      <a href="bilder.html" aria-current="page">Bilder</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <p class="eyebrow">Einblicke</p>
+    <h1>Bilder</h1>
+    <div class="gallery-intro">
+      <p>Impressionen aus unserem Revier, von der Hege, aus der Natur und von unseren Veranstaltungen.</p>
+    </div>
+    <div id="gallery" class="gallery-grid" aria-live="polite"></div>
+    <a class="gallery-back" href="index.html">← Zur Startseite</a>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <strong>Jägerschaft Neureetz</strong>
+      <p>Waidwerk · Hege · Naturschutz</p>
+    </div>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(async function(){
+  const gallery = document.getElementById('gallery');
+  function escapeHtml(s){return String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+  try {
+    const res = await fetch('content/site.json?v=' + Date.now());
+    const d = await res.json();
+    const items = d.gallery || [];
+    if (!items.length) {
+      gallery.className = 'gallery-empty';
+      gallery.innerHTML = '<strong>Noch keine Bilder eingestellt.</strong><p>Neue Bilder können über die Website-Verwaltung hinzugefügt werden.</p>';
+      return;
+    }
+    gallery.innerHTML = '';
+    items.forEach(item => {
+      if (!item.image) return;
+      const figure = document.createElement('figure');
+      figure.className = 'gallery-card';
+      const caption = item.caption ? '<figcaption class="gallery-caption">' + escapeHtml(item.caption) + '</figcaption>' : '';
+      figure.innerHTML = '<a href="' + encodeURI(item.image) + '" target="_blank" rel="noopener"><img src="' + encodeURI(item.image) + '" alt="' + escapeHtml(item.caption || 'Bild aus dem Revier Neureetz') + '"></a>' + caption;
+      gallery.appendChild(figure);
+    });
+  } catch(e) {
+    gallery.className = 'gallery-empty';
+    gallery.innerHTML = '<strong>Bilder konnten gerade nicht geladen werden.</strong>';
+  }
+})();
+</script>
+</body>
+</html>
