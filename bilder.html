@@ -69,7 +69,7 @@
       const figure = document.createElement('figure');
       figure.className = 'gallery-card';
       const caption = item.caption ? '<figcaption class="gallery-caption">' + escapeHtml(item.caption) + '</figcaption>' : '';
-      figure.innerHTML = '<a href="' + encodeURI(item.image) + '" target="_blank" rel="noopener"><img src="' + encodeURI(item.image) + '" alt="' + escapeHtml(item.caption || 'Bild aus dem Revier Neureetz') + '"></a>' + caption;
+      figure.innerHTML = '<a href="' + encodeURI(item.image) + '" target="_blank" rel="noopener"><img class="gallery-image" src="' + encodeURI(item.image) + '" alt="' + escapeHtml(item.caption || 'Bild aus dem Revier Neureetz') + '"></a>' + caption;
       gallery.appendChild(figure);
     });
   } catch(e) {
