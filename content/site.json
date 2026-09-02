@@ -1,18 +1,5 @@
 {
-  "siteTitle": "Jägerschaft Neureetz",
   "heroImage": "hero.png",
-  "heroEyebrow": "Waidwerk · Hege · Naturschutz",
-  "heroTitle1": "Jägerschaft",
-  "heroTitle2": "Neureetz",
-  "heroLead": "Tradition bewahren. Zukunft gestalten.",
-
-  "introEyebrow": "Über uns",
-  "introTitle": "Waidwerk mit Verantwortung",
-  "introText1": "Die Jägerschaft Neureetz steht für verantwortungsvolle Jagd, gelebte Hege und aktiven Naturschutz in unserer heimischen Landschaft.",
-  "introText2": "Wir verbinden jagdliche Tradition mit einem modernen Verständnis für Wild, Wald, Feld und Natur.",
-  "quote": "Tradition bewahren. Zukunft gestalten.",
-
-  "hegeTitle": "Jagd, Hege und Verantwortung",
   "hegeCards": [
     {
       "icon": "🦌",
@@ -30,21 +17,37 @@
       "text": "Aktiver Einsatz für unsere heimische Tier- und Pflanzenwelt und eine vielfältige Kulturlandschaft."
     }
   ],
-
-  "natureTitle": "Natur erhalten – Lebensräume schützen",
-  "natureText": "Unsere Verantwortung endet nicht mit der Jagd. Wir setzen uns aktiv für den Erhalt und die Pflege wertvoller Lebensräume ein.",
-  "natureImage": "hero.png",
   "natureBullets": [
     "Pflege und Erhalt von Lebensräumen",
     "Unterstützung der heimischen Tierwelt",
     "Förderung einer artenreichen Kulturlandschaft",
     "Verantwortungsvoller Umgang mit Natur und Wild"
   ],
-
   "contactName": "Tobias Kentel",
-  "contactAddress": "Wriezener Str. 8\n16259 Oderaue",
-  "contactEmail": "tobiwaw@web.de",
+  "introTitle": "Waidwerk mit Verantwortung",
   "contactPhone": "0174 7141531",
-
-  "events": []
+  "heroEyebrow": "Waidwerk · Hege · Naturschutz",
+  "natureTitle": "Natur erhalten – Lebensräume schützen",
+  "siteTitle": "Jägerschaft Neureetz",
+  "heroTitle1": "Jägerschaft",
+  "natureImage": "hero.png",
+  "heroTitle2": "Neureetz",
+  "natureText": "Unsere Verantwortung endet nicht mit der Jagd. Wir setzen uns aktiv für den Erhalt und die Pflege wertvoller Lebensräume ein.",
+  "contactAddress": "Freienwalder Str. 16\n16259 Oderaue",
+  "heroLead": "Tradition bewahren. Zukunft gestalten.",
+  "introText1": "Die Jägerschaft Neureetz steht für verantwortungsvolle Jagd, gelebte Hege und aktiven Naturschutz in unserer heimischen Landschaft. Aktuell betreuen Tobi, Olli und Sven und Tobi G. das Revier Neureetz.",
+  "events": [
+    {
+      "date": "21.11.2026",
+      "time": "18:00",
+      "title": "Lichterfest Neureetz",
+      "location": "Bürgerhaus",
+      "description": "Wir sind vor Ort und bieten Euch Grill- & Currywürste aus Neureetzer Wild direkt vom Grill.\nSuper Lecker, Selbstgemacht, Nachhaltig!\n\nKommt vorbei und probiert bei uns eine leckere Wurst\n\nWir freuen uns auf Euch"
+    }
+  ],
+  "introText2": "Wir verbinden jagdliche Tradition mit einem modernen Verständnis für Wild, Wald, Feld und Natur.",
+  "quote": "Tradition bewahren. Zukunft gestalten.",
+  "contactEmail": "tobiwaw@web.de",
+  "hegeTitle": "Jagd, Hege und Verantwortung",
+  "introEyebrow": "Über uns"
 }
