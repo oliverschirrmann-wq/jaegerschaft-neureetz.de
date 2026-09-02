@@ -11,7 +11,7 @@ collections:
   - name: "site"
     label: "Website & Termine"
     files:
-      - label: "Website & Termine"
+  - label: "Website & Termine"
         name: "site"
         file: "content/site.json"
         fields:
